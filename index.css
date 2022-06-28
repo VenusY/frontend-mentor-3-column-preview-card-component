@@ -1,0 +1,141 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+}
+
+body {
+  background: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca";
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 0px;
+}
+
+h2 {
+  font-family: "Big Shoulders Display";
+  font-size: 40px;
+  color: hsl(0, 0%, 95%);
+}
+
+.container {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 500px;
+
+  display: flex;
+}
+
+.section {
+  width: 210px;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sedans {
+  background: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+  background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.button {
+  width: 150px;
+  height: 45px;
+  background: hsl(0, 0%, 95%);
+  border: 3px solid hsl(0, 0%, 95%);
+  border-radius: 1000px;
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sedans-button {
+  color: hsl(31, 77%, 52%);
+}
+
+#suvs-button {
+  color: hsl(184, 100%, 22%);
+}
+
+#luxury-button {
+  color: hsl(179, 100%, 13%);
+}
+
+a:link {
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.button:hover {
+  color: hsl(0, 0%, 95%) !important;
+}
+
+#sedans-button:hover {
+  background: hsl(31, 77%, 52%);
+}
+
+#suvs-button:hover {
+  background: hsl(184, 100%, 22%);
+}
+
+#luxury-button:hover {
+  background: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 930px) {
+  body {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .card {
+    width: auto;
+    height: auto;
+
+    flex-direction: column;
+  }
+
+  .section {
+    width: 230px;
+    height: 350px;
+  }
+
+  .sedans {
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+  }
+
+  .luxury {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  body {
+    height: auto;
+    padding: 50px 0;
+  }
+}
